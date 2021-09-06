@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import TodoTemplate from "./components/TodoTemplate";
 import TodoHead from "./components/TodoHead";
 import TodoList from "./components/TodoList";
+import TodoItem from "./components/TodoItem";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -17,7 +18,11 @@ function App() {
       <div>바탕화면 회색</div>
       <TodoTemplate>
         <TodoHead></TodoHead>
-        <TodoList></TodoList>
+        <TodoList>
+          <TodoItem></TodoItem>
+          <TodoItem></TodoItem>
+          <TodoItem></TodoItem>
+        </TodoList>
       </TodoTemplate>
     </>
   );
